@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    margin: 4rem 0rem 3rem;
+    overflow: hidden;
+    max-width: 375px;
+
+}
+
+.card-content {
+    padding: 3.5rem;
+}
+
+#card-one {
+    background-color: var(--bright-orange);
+
+}
+
+#card-two {
+    background-color: var(--dark-cyan);
+}
+
+#card-three {
+    background-color: var(--very-dark-cyan);
+
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 2rem 0 2rem;
+    color: var(--light-gray);
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--transparent-white);
+    margin-bottom: 1.8rem;
+    font-size: 17px;
+}
+
+.info-btn {
+    padding: 1rem 2.5rem 1rem;
+    border: 2px solid;
+    border-radius: 24px;
+    background-color: var(--light-gray);
+    font-size: 16px;
+    font-weight: bold;
+    mix-blend-mode: screen;
+
+}
+
+.info-btn:hover,
+.info-btn:active {
+    background-color: transparent;
+    color: white;
+}
+
+@media (min-width: 770px) {
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 100vh;
+        max-width: 900px;
+    }
+
+    .card-content {
+        padding: 2rem;
+    }
+
+    #card-one {
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    #card-three {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+}
